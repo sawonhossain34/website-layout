@@ -4,39 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e079e59345.js" crossorigin="anonymous"></script>
     <title>Login</title>
     <style>
+        .login-container{
+            display:flex;
+            justify-content:center;
+        }
+        nav{
+            display:flex;
+            justify-content: space-between;
+        }
+        nav a{
+            text-decoration: none;
+            color:black;
+            margin-right: 10px;
+        }
+        
+        
         .login-form{
             display: flex;
             flex-direction: column;
             width: 50%;
-            border:2px solid red;
+            
         }
         .login-form input{
             margin-top:1em;
             font-size:1.5em;
             padding:5px 10px;
 
-        /* }
+        }
         .login-form input[type="submit"]{
             background-color: goldenrod;
             border:0px;
             border-radius: 5px;
             color:rgb(97, 136, 182);
             font-weight: 700;
-        } */
+        } 
        
       
     </style>
 </head>
 <body>
-    <form class="login-form">
-        <h3 class="">Pleace Login</h3>
-            <input type="email" name="" id="one" placeholder="Your email" required>
-            <input type="password" name="" id="" placeholder="password" required>
-            <input type="submit" value="login">
+    <header>
+        <nav>
+            <span><a href="">Home</a>
+                <a href="">Dashboard</a>
+                <a href="">Inventory</a>
+            </span>
+            
+                <span><a href=""><i class="fa-solid fa-user"></i></a>
+                    <a href=""><i class="fa-sharp fa-solid fa-car"></i></a>
+                </span>
+            
+        </nav>
+    </header>
+    <section class="login-container">
+        <form class="login-form">
+            <h1 class="">Pleace Login</h1>
+                <input type="email" name="" id="one" placeholder="Your email" required>
+                <input type="password" name="" id="" placeholder="password" required>
+                <input type="submit" value="login">
+            </form>
+    </section>
 
         
-    </form>
+    
 </body>
 </html>
